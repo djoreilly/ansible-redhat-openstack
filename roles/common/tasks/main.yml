@@ -75,9 +75,3 @@
 
 - name: Disable SELinux in conf file
   copy: src=selinux dest=/etc/sysconfig/selinux
-
-- name: Disable iptables
-  service: name=iptables state=stopped enabled=no
-
-
-
